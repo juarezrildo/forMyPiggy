@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="icon" href="img/flowers.png" type="image/x-icon" />
+  <title>Flower</title>
+</head>
+<body class="container" onload="initAudio()">
+
+  <audio id="miAudio" src="sound/Los Primos MX - Mi Bello Ángel.mp3" autoplay></audio>
+  <div>
+    <img src="img/PngItem_790065.png" width="600" height="200" style="transform: translate(60px,-300px);">
+ </div>
+  <div align="left">
+    <img src="img/—Pngtree—love you piggy_5402790.png" width="200" height="200" style="transform: translate(-300px,-10px);"/>
+  </div>
+  <h1 class="titulo">Y de aquí para adelante 
+    Quiero que seas vos, vos y sólamente vos ♥
+    Hagamos que todo esto sea real, podemos con todo...!♥
+  </h1>
+
+  <div class="night"></div>
+
+  <button id="activarSonido" style="display: none;">Activar Sonido</button>
+
+<audio id="audio">
+  <source src="sound/Los Primos MX - Mi Bello Ángel.mp3">
+</audio>
+
+<script>
+  document.body.addEventListener('touchstart', function() {
+    var audio = document.getElementById('audio');
+    audio.play();
+  }, { once: true });
+</script>
+
+  <script src="anim.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
